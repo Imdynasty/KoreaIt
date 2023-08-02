@@ -5,16 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="55eb1159-5ecd-473a-89e9-69560834f76e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../cmd git 설정 - 복사본.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day02/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day02/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day02/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day02/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day02/src/main/resources/META-INF/maven/archetype.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day02/src/main/resources/archetype-resources/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day02/src/main/resources/archetype-resources/src/main/java/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day02/src/main/resources/archetype-resources/src/test/java/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day01" beforeDir="false" afterPath="$PROJECT_DIR$/../day01" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day02/src/main/java/exam01/Ex01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day02/src/main/java/exam01/ImplCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day02/src/main/java/exam01/RecCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day02/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../day02/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day02/src/main/java/exam01/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../day02/src/main/java/exam01/Calculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
