@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6b1e617-2f69-4f61-9af2-3dad07382341" name="Changes" comment="dsa">
-      <change afterPath="$PROJECT_DIR$/src/main/java/exam01/Ex02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/exam01/ProxyCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/exam01/Ex01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exam01/Ex01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../exam04/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../exam04/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +37,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "last_opened_file_path": "C:/Users/Administrator/Desktop/오승민B1/6.서버프로그램 구현/spring_study B2/day02",
-    "settings.editor.selected.configurable": "com.poratu.idea.plugins.tomcat.setting.TomcatServersConfigurable"
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RunManager" selected="Application.Ex02">
@@ -103,8 +99,27 @@
       <option name="project" value="LOCAL" />
       <updated>1690948196250</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="dsa">
+      <option name="closed" value="true" />
+      <created>1691022401020</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1691022401020</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="dsa" />
