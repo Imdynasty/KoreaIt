@@ -8,7 +8,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class Ex02 {
     public static void main(String[] args) {
         AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(AppCtx.class);
-        Calculator cal  = ctx.getBean(RecCalculator.class);
+        Calculator cal  = ctx.getBean(Calculator.class);
 
         long re = cal.factorial(10);
         System.out.println(re);
