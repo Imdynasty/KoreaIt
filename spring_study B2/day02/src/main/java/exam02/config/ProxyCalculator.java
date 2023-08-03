@@ -5,8 +5,10 @@ import org.aspectj.lang.Signature;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Pointcut;
+import org.springframework.core.annotation.Order;
 
 @Aspect
+@Order(2)
 public class ProxyCalculator {
     /*
     aopex.* : aopex 패키지의 모든 하위 클래스
@@ -28,12 +30,12 @@ public class ProxyCalculator {
     public Object process(ProceedingJoinPoint joinPoint) throws Throwable{
 
         /**메서드 정보*/
-        System.out.println("호출한 메서드 정보 : " + joinPoint.getSignature().toLongString());
+        //System.out.println("호출한 메서드 정보 : " + joinPoint.getSignature().toLongString());
 
         /**매개변수로 사용된 값*/
         Object[] args = joinPoint.getArgs();
         long num =(Long)args[0];
-        System.out.println("num :" + num);
+       // System.out.println("num :" + num);
 
         long stime = System.nanoTime();
         try{

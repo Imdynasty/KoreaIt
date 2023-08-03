@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6b1e617-2f69-4f61-9af2-3dad07382341" name="Changes" comment="프록시">
+      <change afterPath="$PROJECT_DIR$/src/main/java/exam02/config/ProxyCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/exam02/main/Ex02.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/exam02/config/AppCtx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exam02/config/AppCtx.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/exam02/config/ProxyCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exam02/config/ProxyCalculator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,6 +23,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="origin/member3" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -59,7 +65,7 @@
       <recent name="C:\Users\Administrator\Desktop\오승민B1\6.서버프로그램 구현\spring_study B2\day02\src\main\java\exam02\aopex" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.exam02.main.Ex01">
+  <component name="RunManager" selected="Application.exam02.main.Ex02">
     <configuration name="Ex01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="exam01.Ex01" />
       <module name="day02" />
@@ -99,8 +105,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="exam02.main.Ex02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exam02.main.Ex02" />
+      <module name="day02" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="exam02.main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.exam02.main.Ex02" />
         <item itemvalue="Application.exam02.main.Ex01" />
         <item itemvalue="Application.Ex02" />
         <item itemvalue="Application.Ex01" />
@@ -156,7 +176,15 @@
       <option name="project" value="LOCAL" />
       <updated>1691024564126</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="프록시">
+      <option name="closed" value="true" />
+      <created>1691025543230</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1691025543230</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -214,6 +242,15 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/exam02/main/Ex02.java</url>
+          <line>8</line>
+          <properties class="exam02.main.Ex02" method="main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
