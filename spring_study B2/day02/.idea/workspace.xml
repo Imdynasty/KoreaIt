@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6b1e617-2f69-4f61-9af2-3dad07382341" name="Changes" comment="가나다라">
-      <change afterPath="$PROJECT_DIR$/src/main/java/exam02/aopex/Calculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/exam02/aopex/RecCalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/exam02/config/AppCtx.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/exam02/config/ProxyCalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/exam02/main/Ex01.java" afterDir="false" />
+    <list default="true" id="e6b1e617-2f69-4f61-9af2-3dad07382341" name="Changes" comment="프록시">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/exam02/config/ProxyCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exam02/config/ProxyCalculator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,16 +24,16 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
         <option name="accountId" value="3e768329-5d9d-4668-857a-e3e12b37495d" />
-        <option name="url" value="https://github.com/Imdynasty/SpringStudy.git" />
+        <option name="url" value="https://github.com/Imdynasty/practice.git" />
       </UrlAndAccount>
     </option>
   </component>
@@ -50,15 +45,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/Administrator/Desktop/오승민B1/6.서버프로그램 구현/spring_study B2/day02/src/main/java/exam02/aopex",
-    "settings.editor.selected.configurable": "Ignore Files Support"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Administrator/Desktop/오승민B1/6.서버프로그램 구현/spring_study B2/day02/src/main/java/exam02/aopex&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Administrator\Desktop\오승민B1\6.서버프로그램 구현\spring_study B2\day02\src\main\java\exam02\aopex" />
@@ -153,7 +148,15 @@
       <option name="project" value="LOCAL" />
       <updated>1691022649116</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="프록시">
+      <option name="closed" value="true" />
+      <created>1691024564126</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1691024564126</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -182,7 +185,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/master" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>
@@ -197,7 +200,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="dsa" />
     <MESSAGE value="가나다라" />
-    <option name="LAST_COMMIT_MESSAGE" value="가나다라" />
+    <MESSAGE value="프록시" />
+    <option name="LAST_COMMIT_MESSAGE" value="프록시" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
