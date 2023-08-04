@@ -5,16 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6b1e617-2f69-4f61-9af2-3dad07382341" name="Changes" comment="프록시2">
-      <change afterPath="$PROJECT_DIR$/src/main/java/exam02/config/CommonPointcut.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/exam02/config/AppCtx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exam02/config/AppCtx.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/exam02/config/ProxyCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exam02/config/ProxyCache.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/exam02/main/Ex02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exam02/main/Ex02.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../exam04/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../exam04/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../exam04/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../exam04/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../exam04/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cmd git 설정 - 복사본.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/../../cmd git/cmd git 설정 - 복사본.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cmd git 설정.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/../../cmd git/cmd git 설정.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +43,9 @@
       </UrlAndAccount>
     </option>
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
   <component name="ProjectId" id="2TPa3E0ghzE04TJVJjkTsgXokd5" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -61,7 +59,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/Administrator/Desktop/오승민B1/스프링보충/spring_study/exam04",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/ST-USER/Desktop/코리아IT/7.스프링 MVC/SpringStudy/spring_study B2/day02",
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
 }]]></component>
