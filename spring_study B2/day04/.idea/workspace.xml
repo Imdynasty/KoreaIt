@@ -5,28 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5c76b99-d3a1-40c5-9a56-a15501044f8d" name="Changes" comment="web mvc!">
-      <change afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SpringMvc/src/main/java/config/AppCtx.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SpringMvc/src/main/java/config/ControllerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SpringMvc/src/main/java/config/MvcConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SpringMvc/src/main/java/controllers/HelloController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SpringMvc/src/main/java/main/Ex01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SpringMvc/src/main/java/models/board/BoardDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SpringMvc/src/main/java/models/board/BoardData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SpringMvc/src/main/webapp/WEB-INF/view/hello.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SpringMvc/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../cmd git 설정 - 복사본.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/../../cmd git/cmd git 설정 - 복사본.PNG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../cmd git 설정.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/../../cmd git/cmd git 설정.PNG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day02/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../day02/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day02/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../day02/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/config/MvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/MvcConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/member/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/member/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/board/BoardDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/board/BoardDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/member/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/member/LoginService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/member/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/member/MemberController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +31,9 @@
     <option name="FILTER_INFO" value="true" />
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2TUpzmFPLKdsIy59Hnh45qugCTz" />
   <component name="ProjectLevelVcsManager">
@@ -135,7 +119,15 @@
       <option name="project" value="LOCAL" />
       <updated>1691376108223</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="web mvc!">
+      <option name="closed" value="true" />
+      <created>1691378482093</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1691378482093</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

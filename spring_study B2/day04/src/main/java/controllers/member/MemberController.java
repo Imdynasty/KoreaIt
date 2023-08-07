@@ -16,7 +16,7 @@ public class MemberController {
     @GetMapping("/join")
     public String join(){
 
-        return "member/join"; // /WEB-INF/view/member/join.jsp
+        return "member/join"; // /WEB-INF/templates/member/join.html
     }
     @PostMapping("/join")
     public String joinPs(JoinForm joinForm){

@@ -36,7 +36,7 @@ public class MvcConfig implements WebMvcConfigurer {
         templateResolver.setApplicationContext(applicationContext);
         templateResolver.setPrefix("/WEB-INF/templates/");
         templateResolver.setSuffix(".html");
-        templateResolver.setCacheable(false);
+        templateResolver.setCacheable(false);//캐시 여부
         return templateResolver;
     }
 
@@ -45,7 +45,7 @@ public class MvcConfig implements WebMvcConfigurer {
         SpringTemplateEngine templateEngine = new SpringTemplateEngine();
         templateEngine.setTemplateResolver(templateResolver());
         templateEngine.setEnableSpringELCompiler(true);
-        templateEngine.addDialect(new Java8TimeDialect());
+        templateEngine.addDialect(new Java8TimeDialect()); // temporals
         templateEngine.addDialect(new LayoutDialect());
         return templateEngine;
     }
