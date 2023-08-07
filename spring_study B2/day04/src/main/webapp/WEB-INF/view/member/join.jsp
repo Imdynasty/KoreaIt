@@ -1,0 +1,68 @@
+<%@ page contentType="text/html; charset=UTF-8" %>
+<h1>회원가입</h1>
+<form method="post">
+    <dl>
+        <dt>id</dt>
+        <dd>
+            <input type="text" name="userId">
+        </dd>
+    </dl>
+    <dl>
+        <dt>password</dt>
+        <dd>
+            <input type="password" name="userPw">
+        </dd>
+    </dl>
+    <dl>
+            <dt>passwordRe</dt>
+            <dd>
+                <input type="password" name="userPwRe">
+            </dd>
+    </dl>
+    <dl>
+                <dt>userNm</dt>
+                <dd>
+                    <input type="text" name="userNm">
+                </dd>
+        </dl>
+        <dl>
+                        <dt>Email</dt>
+                        <dd>
+                            <input type="text" name="email">
+                        </dd>
+                </dl>
+    <dl>
+                    <dt>mobilephone</dt>
+                    <dd>
+                        <input type="text" name="mobile">
+                    </dd>
+            </dl>
+
+     <dl>
+                         <dt>hobby</dt>
+                         <dd>
+                             <input type="checkbox" name="hobby" value="baseball">baseball
+                             <input type="checkbox" name="hobby" value="basketball">basketball
+                             <input type="checkbox" name="hobby" value="football">football
+
+                             <input type="checkbox" name="hobby" value="piano">piano
+                             <input type="checkbox" name="hobby" value="readbook">readbook
+                         </dd>
+                 </dl>
+     <dl>
+                         <dt>address</dt>
+                         <dd>
+                             <input type="text" name="addr.zip">
+                             <input type="text" name="addr.addr1">
+                             <input type="text" name="addr.addr2">
+                         </dd>
+                 </dl>
+    <dl>
+                    <dt>agree</dt>
+                    <dd>
+                        <input type="checkbox" name="agree" value="true" id="agree">
+                        <label for="agree">가입 약관에 동의합니다.</label>
+                    </dd>
+            </dl>
+          <button type="submit">sign up</button>
+</form>
