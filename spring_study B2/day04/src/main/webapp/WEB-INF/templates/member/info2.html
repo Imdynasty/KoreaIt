@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
   <body>
+    <header th:replace="~{outlines/header/main::common}"></header>
     <th:block th:text="${title}"></th:block>
   <br>
     <th:block th:utext="${title}"></th:block>
   <br>
-  <div class="num" th:classappend="${num % 2 ==1 ? 'on':''}" th:text="${num}"></div>
+  <div class="num" th:classappend="${num % 2 ==1 ? 'on':''}" th:text="${num}"></div>\
+  <footer th:replace="~{outlines/footer/main::common}"></footer>
   </body>
 
 
