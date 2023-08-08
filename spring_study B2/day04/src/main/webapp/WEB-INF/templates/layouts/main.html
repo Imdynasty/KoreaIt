@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org"
-    xmlns:layout="htttp://www.ultraq.net.nz/thymeleaf/layout">
-
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 <head>
-        <meta charset="UTF-8">
-        <title>사이트 제목...</title>
+    <meta charset="UTF-8">
+    <title>사이트 제목...</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+    <link rel="stylesheet" type="text/css"
+          th:if="${addCss != null}"
+          th:each="cssFile : ${addCss}" th:href="@{/css/{file}.css(file=${cssFile})}">
+
+    <script th:src="@{/js/common.js}"></script>
+    <script th:if="${addScript != null}"
+            th:each="jsFile : ${addScript}" th:src="@{/js/{file}.js(file=${jsFile}}"></script>
 </head>
 <body>
-    <header th:replace="~{outlines/header/main::common}"></header>
-    <main layout:fragment="content"></main>
-    <footer th:replace="~{outlines/footer/main::common}"></footer>
+<header th:replace="~{outlines/header/main::common}"></header>
+
+<main layout:fragment="content"></main>
+
+<footer th:replace="~{outlines/footer/main::common}"></footer>
 </body>
-
-
 </html>
