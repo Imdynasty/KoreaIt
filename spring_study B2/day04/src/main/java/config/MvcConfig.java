@@ -20,6 +20,12 @@ public class MvcConfig implements WebMvcConfigurer {
     private ApplicationContext applicationContext;//가장 상위 컨테이너를 설정해야함
 
     @Override
+    public void addViewControllers(ViewControllerRegistry registry) {
+        registry.addViewController("/")
+                .setViewName("main/index");
+    }
+
+    @Override
     public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
         configurer.enable();
         //URL 요청 적용 우선순위 : 컨트롤러 빈 > 없으면 정적 경로에서 바로 접근

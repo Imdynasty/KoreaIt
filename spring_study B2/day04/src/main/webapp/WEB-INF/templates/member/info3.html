@@ -2,6 +2,13 @@
 <html xmlns:th="http://www.thymeleaf.org"
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
       layout:decorate="~{layouts/main}">
+<th:block layout:fragment="addCss">
+    <link rel="stylesheet" type="text/css" th:href="@{/test/test1.css">
+</th:block>
+
+<th:block layout:fragment="addScript">
+    <script th:src="@{/test/test2.js}"></script>
+</th:block>
 
 <main layout:fragment="content">
     <h1>본문 영역!</h1>
