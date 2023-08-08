@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <body>
+    <th:block th:text="${title}"></th:block>
+  <br>
+    <th:block th:utext="${title}"></th:block>
+  <br>
+  <div class="num" th:classappend="${num % 2 ==1 ? 'on':''}" th:text="${num}"></div>
+  </body>
+
+
+</html>

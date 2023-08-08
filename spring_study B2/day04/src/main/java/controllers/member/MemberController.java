@@ -44,24 +44,30 @@ public class MemberController {
         return "member/info"; // /WEB-INF/templates/member/info.html
      }
 
-     @GetMapping("/list")
-    public String list(Model model){
+    @GetMapping("/list")
+    public String list(Model model) {
         List<Member> members = new ArrayList<>();
 
-        for(int i = 1 ; i <= 10 ;i++){
-            Member member= Member.builder()
+        for (int i = 1; i <= 10; i++) {
+            Member member = Member.builder()
                     .userNo(i)
-                    .userId("user"+i)
+                    .userId("user" + i)
                     .userPw("12345678")
                     .userNm("사용자" + i)
                     .email("user" + i + "@test.org")
-                    .mobile("010000000000")
+                    .mobile("01000000000")
                     .regDt(LocalDateTime.now())
                     .build();
             members.add(member);
         }
-        model.addAttribute("members",members);
-
+        model.addAttribute("members", members);
         return "member/list";
+     }
+
+     @GetMapping("/info2")
+    public String info2(Model model){
+        model.addAttribute("title","<h1>제목</h1>");
+        model.addAttribute("num",10);
+        return "member/info2";
      }
 }

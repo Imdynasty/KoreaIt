@@ -1,30 +1,41 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-    <body>
-        <table border="1">
-            <thead>
-                <tr>
-                    <th>회원번호</th>
-                    <th>아이디</th>
-                    <th>비밀번호</th>
-                    <th>이메일</th>
-                    <th>휴대전화번호</th>
-                    <th>가입일시</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr th:each="member : ${members}" th:object ="${member}">
-                    <td th: text = "*{userNo}"></td>
-                    <td th: text = "*{userId}"></td>
-                    <td th: text = "*{userNm}"></td>
-                    <td th: text = "*{email}"></td>
-                    <td th: text = "*{mobile}"></td>
-                    <td th: text = "*{regDt}"></td>
-                </tr>
-            </tbody>
-        </table>
-
-    </body>
-
-
+<body>
+<table border="1">
+    <thead>
+    <tr>
+        <th>순번</th>
+        <th>회원번호</th>
+        <th>아이디</th>
+        <th>회원명</th>
+        <th>이메일</th>
+        <th>휴대전화번호</th>
+        <th>가입일시</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="member, status : ${members}" th:object="${member}">
+        <!--<td th:text="${status.index}"></td>-->
+        <!--<td th:text="${status.count}"></td>-->
+        <!--<td th:if="${status.count % 2 == 0}">짝수</td>
+        <td th:unless="${status.count % 2 == 0}">홀수</td>-->
+        <!--<td th:if="${status.count % 2 != 0}">홀수</td>-->
+        <td th:switch="${status.even}">
+            <th:block th:case="true">짝수</th:block>
+            <th:block th:case="false">홀수</th:block>
+        </td>
+        <td th:text="*{userNo}"></td>
+        <td th:text="*{userId}"></td>
+        <td th:text="*{userNm}"></td>
+        <td th:text="*{email}"></td>
+        <td th:text="*{mobile}"></td>
+        <td th:text="*{#temporals.format(regDt, 'yyyy.MM.dd HH:mm')}"></td>
+    </tr>
+    </tbody>
+</table>
+<h1>#numbers</h1>
+<ul>
+    <li th:each="num : ${#numbers.sequence(1, 10, 2)}" th:text="${num}"></li>
+</ul>
+</body>
 </html>
