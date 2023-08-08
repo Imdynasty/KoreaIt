@@ -1,33 +1,46 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-    <body>
-        <dl>
-            <dt>회원번호</dt>
-            <dd th:text="${member.userNo}"></dd>
-        </dl>
+<body>
+<a th:href="@{/member/join}">회원가입</a>
+<a th:href="@{/member/info(userId=${member.userId},email=${member.email})}">회원정보</a>
+<br>
+<a th:href="@{/member/info/{id}(id=${member.userId})}">회원정보2</a>
+<br>
+<div th:text="${#messages.msg('login.message', member.userNm, member.userId)}"> </div>
+
+<div th:text="${@cUtil.toUpper('abcd')}"></div>
+
+<th:block th:object="${member}">
     <dl>
-        <dt>아이디</dt>
-        <dd th:text="${member.userId}"></dd>
+        <dt th:text="#{member.userNo}"></dt>
+        <dd th:text="*{userNo}"></dd>
     </dl>
-        <dl>
-            <dt>비밀번호</dt>
-            <dd th:text="${member.userPw}"></dd>
-        </dl>
-        <dl>
-            <dt>회원명</dt>
-            <dd th:text="${member.userNm}"></dd>
-        </dl>
-        <dl>
-            <dt>이메일</dt>
-            <dd th:text="${member.email}"></dd>
-        </dl>
-        <dl>
-            <dt>휴대전화번호</dt>
-            <dd th:text="${member.mobile}"></dd>
-        </dl>
-        <dl>
-            <dt>가입일시</dt>
-            <dd th:text="${member.regDt}"></dd>
-        </dl>
-    </body>
+    <dl>
+        <dt th:text="#{member.userId}"></dt>
+        <dd>
+            [[*{userId}]]
+        </dd>
+    </dl>
+    <dl>
+        <dt th:text="#{member.userPw}"></dt>
+        <dd th:text="*{userPw}"></dd>
+    </dl>
+    <dl>
+        <dt th:text="#{member.userNm}"></dt>
+        <dd th:text="*{userNm}"></dd>
+    </dl>
+    <dl>
+        <dt th:text="#{member.email}"></dt>
+        <dd th:text="*{email}"></dd>
+    </dl>
+    <dl>
+        <dt th:text="#{member.mobile}"></dt>
+        <dd th:text="*{mobile}"></dd>
+    </dl>
+    <dl>
+        <dt th:text="#{member.regDt}"></dt>
+        <dd th:text="*{#temporals.format(regDt, 'yyyy.MM.dd')}"></dd>
+    </dl>
+</th:block>
+</body>
 </html>

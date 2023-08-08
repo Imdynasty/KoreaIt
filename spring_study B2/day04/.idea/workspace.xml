@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5c76b99-d3a1-40c5-9a56-a15501044f8d" name="Changes" comment="web mvc!">
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/member/Member.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/member/info.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../koreait" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/config/CommonUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/messages/commons.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/member/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/member/MemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/member/join.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/member/join.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/config/MvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/MvcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/member/info.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/member/info.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,11 +52,11 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/Administrator/Desktop/오승민B1/6.서버프로그램 구현/spring_study B2/day05",
+    "last_opened_file_path": "C:/Users/Administrator/Desktop/오승민B1/6.서버프로그램 구현/spring_study B2/day04/src",
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "com.poratu.idea.plugins.tomcat.setting.TomcatServersConfigurable"
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "File.Encoding"
   }
 }]]></component>
   <component name="RunManager" selected="Smart Tomcat.tomcat10">
@@ -147,7 +147,15 @@
       <option name="project" value="LOCAL" />
       <updated>1691378973890</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="web mvc!">
+      <option name="closed" value="true" />
+      <created>1691380345182</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1691380345182</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
