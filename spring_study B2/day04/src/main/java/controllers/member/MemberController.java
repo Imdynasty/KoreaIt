@@ -70,4 +70,9 @@ public class MemberController {
         model.addAttribute("num",10);
         return "member/info2";
      }
+     @GetMapping("/info3")
+     public String info3(Model model){
+
+        return "member/info3";
+     }
 }
