@@ -4,7 +4,64 @@
       layout:decorate="~{layouts/main}">
 
 <main layout:fragment="content">
-    <h1>로그인</h1>
+    <h1>회원가입</h1>
+
+    <form method="POST" th:action="@{/member/join}" th:object="${joinForm}">
+        <div th:each="err : ${#fields.globalErrors()}" th:text="${err}"></div>
+        <dl>
+            <dt>id</dt>
+            <dd>
+                <input type="text" name="userId" th:field="*{userId}">
+                <div th:each="err : ${#fields.errors('userId')}" th:text="${err}"></div>
+            </dd>
+        </dl>
+        <dl>
+            <dt>password</dt>
+            <dd>
+                <input type="password" name="userPw" th:field="*{userPw}">
+                <div th:each="err : ${#fields.errors('userPw')}" th:text="${err}"></div>
+            </dd>
+        </dl>
+        <dl>
+            <dt>passwordRe</dt>
+            <dd>
+                <input type="password" name="userPwRe" th:field="*{userPwRe}">
+                <div th:each="err : ${#fields.errors('userPwRe')}" th:text="${err}"></div>
+            </dd>
+        </dl>
+        <dl>
+            <dt>userNm</dt>
+            <dd>
+                <input type="text" name="userNm" th:field="*{userNm}">
+                <div th:each="err : ${#fields.errors('userNm')}" th:text="${err}"></div>
+            </dd>
+        </dl>
+
+        <dl>
+            <dt>Email</dt>
+            <dd>
+                <input type="text" name="email" th:field="*{email}">
+                <div th:each="err : ${#fields.errors('email')}" th:text="${err}"></div>
+            </dd>
+        </dl>
+        <dl>
+            <dt>mobilephone</dt>
+            <dd>
+                <input type="text" name="mobile" th:field="*{mobile}">
+                <div th:each="err : ${#fields.errors('mobile')}" th:text="${err}"></div>
+            </dd>
+        </dl>
+
+        <dl>
+
+            <dd>
+                <input type="checkbox" name="agree" value="true" id="agree" th:field="*{agree}">
+                <label for="agree">회원가입 약관에 동의합니다.</label>
+                <div th:each="err : ${#fields.errors('agree')}" th:text="${err}"></div>
+            </dd>
+        </dl>
+        <button type="submit">Sign up</button>
+    </form>
 </main>
 
 </html>
