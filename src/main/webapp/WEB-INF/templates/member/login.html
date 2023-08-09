@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+        xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+        layout:decorate="~{layouts/main}">
+<main layout:fragment="content">
+    <form method="POST" th:action="@{/member/login}" th:object="${loginForm}">
+        <div th:each="err : ${#fields.globalErrors()}" th:text="${err}"></div>
+        <dl>
+            <dt>id</dt>
+            <dd>
+                <input type="text" name="userId" th:field="*{userId}">
+                <div th:each="err : ${#fields.errors('userId')}" th:text="${err}"></div>
+            </dd>
+        </dl>
+        <dl>
+            <dt>password</dt>
+            <dd>
+                <input type="password" name="userPw" th:field="*{userPw}">
+                <div th:each="err : ${#fields.errors('userPw')}" th:text="${err}"></div>
+            </dd>
+        </dl>
+        <button type="submit">Log in</button>
+    </form>
+
+</main>
+
+</html>

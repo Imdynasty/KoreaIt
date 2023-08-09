@@ -12,8 +12,8 @@ public class DbConfig {
         DataSource ds = new DataSource();
         ds.setDriverClassName("oracle.jdbc.driver.OracleDriver");
         ds.setUrl("jdbc:oracle:thin:@localhost:1521:orcl");
-        ds.setUsername("BOARD_B1");
-        ds.setPassword("_aA123456");
+        ds.setUsername("SCOTT");
+        ds.setPassword("tiger");
 
         ds.setInitialSize(2);
         ds.setMaxActive(10);
@@ -24,6 +24,7 @@ public class DbConfig {
         return ds;
     }
 
+    @Bean
     public JdbcTemplate jdbcTemplate(){
         return new JdbcTemplate(dataSource());
     }
