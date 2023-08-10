@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layouts/main}">
+<main layout:fragment="content">
+        <form method="POST" th:action="@{/file/upload}" enctype="multipart/form-data">
+            제목 <input type="text" name="subject"><br>
+            <input type="file" name="files" multiple>
+            <button type="submit">업로드</button>
+        </form>
+</main>
+
+</html>
