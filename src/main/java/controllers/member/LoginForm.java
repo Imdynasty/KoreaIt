@@ -12,4 +12,7 @@ public class LoginForm {
 
     @NotBlank
     private String userPw;
+
+
+    private boolean saveId;
 }

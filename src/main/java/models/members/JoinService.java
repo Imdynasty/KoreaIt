@@ -1,7 +1,6 @@
 package models.members;
 
 import controllers.member.JoinForm;
-import controllers.member.JoinValidator;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.Errors;

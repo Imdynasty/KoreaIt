@@ -1,6 +1,7 @@
-package controllers.member;
+package models.members;
 
 import commons.validators.MobileValidator;
+import controllers.member.JoinForm;
 import lombok.RequiredArgsConstructor;
 import models.members.MemberDao;
 import org.springframework.stereotype.Component;
