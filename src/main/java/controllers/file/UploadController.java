@@ -1,5 +1,6 @@
 package controllers.file;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -12,6 +13,8 @@ import java.io.IOException;
 @Controller
 @RequestMapping("/file/upload")
 public class UploadController {
+    @Value("${file.upload.path}")
+    private String fileUploadPath;
 
     @GetMapping
     public  String upload(){
@@ -21,7 +24,7 @@ public class UploadController {
     @PostMapping
     public String uploadPs(MultipartFile[] files) throws IOException {
         for(MultipartFile file : files){
-            File dest = new File("D://uploads", file.getOriginalFilename());//올렸던 파일 명칭 그대로 올락감
+            File dest = new File(fileUploadPath, file.getOriginalFilename());//올렸던 파일 명칭 그대로 올락감
             file.transferTo(dest);
         }
 

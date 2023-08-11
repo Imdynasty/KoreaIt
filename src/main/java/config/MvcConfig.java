@@ -3,28 +3,41 @@ package config;
 import interceptors.MemberOnlyInterceptor;
 import nz.net.ultraq.thymeleaf.layoutdialect.LayoutDialect;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
+import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 import org.springframework.context.support.ResourceBundleMessageSource;
+import org.springframework.core.io.ClassPathResource;
 import org.springframework.web.servlet.config.annotation.*;
 import org.thymeleaf.extras.java8time.dialect.Java8TimeDialect;
 import org.thymeleaf.spring6.SpringTemplateEngine;
 import org.thymeleaf.spring6.templateresolver.SpringResourceTemplateResolver;
 import org.thymeleaf.spring6.view.ThymeleafViewResolver;
 
+
 @Configuration
 @EnableWebMvc
 @Import(DbConfig.class)
 public class MvcConfig implements WebMvcConfigurer {
-   /* @Autowired
-    private JoinValidator joinValidator;
+
+    //@Autowired
+    //private JoinValidator joinValidator;
+    /*
     @Override
     public Validator getValidator() {
         return joinValidator;
-    }*/
+    }
+     */
+
+    @Value("${env}")
+    private String env;
+
+    @Value("${file.upload.path}")
+    private String fileUploadPath;
 
     @Autowired
     private ApplicationContext applicationContext;
@@ -36,11 +49,11 @@ public class MvcConfig implements WebMvcConfigurer {
 
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
-       registry.addResourceHandler("/**")
-               .addResourceLocations("classpath:/static/");
+        registry.addResourceHandler("/**")
+                .addResourceLocations("classpath:/static/");
 
-       registry.addResourceHandler("/upload/**")
-               .addResourceLocations("file:///D:/uploads/");
+        registry.addResourceHandler("/upload/**")
+                .addResourceLocations("file:///" + fileUploadPath);
     }
 
     @Bean
@@ -49,7 +62,7 @@ public class MvcConfig implements WebMvcConfigurer {
         templateResolver.setApplicationContext(applicationContext);
         templateResolver.setPrefix("/WEB-INF/templates/");
         templateResolver.setSuffix(".html");
-        templateResolver.setCacheable(false);//캐시 여부
+        templateResolver.setCacheable(env.equals("real")?true:false); // 캐시 여부
         return templateResolver;
     }
 
@@ -58,7 +71,7 @@ public class MvcConfig implements WebMvcConfigurer {
         SpringTemplateEngine templateEngine = new SpringTemplateEngine();
         templateEngine.setTemplateResolver(templateResolver());
         templateEngine.setEnableSpringELCompiler(true);
-        templateEngine.addDialect(new Java8TimeDialect()); // temporals
+        templateEngine.addDialect(new Java8TimeDialect()); // #temporals
         templateEngine.addDialect(new LayoutDialect());
         return templateEngine;
     }
@@ -75,13 +88,14 @@ public class MvcConfig implements WebMvcConfigurer {
     @Override
     public void configureViewResolvers(ViewResolverRegistry registry) {
         registry.viewResolver(thymeleafViewResolver());
-
     }
+
     @Bean
-    public MessageSource messageSource(){
+    public MessageSource messageSource() {
         ResourceBundleMessageSource ms = new ResourceBundleMessageSource();
         ms.setDefaultEncoding("UTF-8");
-        ms.setBasename("messages.commons");
+        ms.setBasenames("messages.commons");
+
         return ms;
     }
 
@@ -99,8 +113,18 @@ public class MvcConfig implements WebMvcConfigurer {
         registry.addInterceptor(memberOnlyInterceptor())
                 .addPathPatterns("/mypage/**");
     }
+
     @Bean
-    public MemberOnlyInterceptor memberOnlyInterceptor(){
+    public MemberOnlyInterceptor memberOnlyInterceptor() {
+
         return new MemberOnlyInterceptor();
+    }
+
+    @Bean
+    public static PropertySourcesPlaceholderConfigurer properties() {
+        PropertySourcesPlaceholderConfigurer conf = new PropertySourcesPlaceholderConfigurer();
+        conf.setLocations(new ClassPathResource("application.properties"));
+
+        return conf;
     }
 }
