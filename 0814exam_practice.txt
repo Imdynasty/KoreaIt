@@ -1,0 +1,46 @@
+spring initial
+pom.xml
+application.properties
+--스케줄
+src.main.org.koreait.controller.board
+src.main.org.koreait.controller.board.BoardController
+src.main.resources.static , templates.board
+template.board - write.html
+src.main.org.koreait.schedulling.BoardStat
+src.main.org.koreait.config.MvcConfig
+
+
+-게시판
+main.org.koreait.models.board
+test.org.koreait.models.board.SaveService
+test.org.koreait.tests.BoardSaveServiceTest//메인으로 만들면서 클래스 추가
+test.org.koreait.controllers.board.BoardDataForm
+test.org.koreait.models.board.BoardValidationException
+test.org.koreait.validators.Validator // RequiredValidator
+test.org.koreait.models.board.BoardSaveValidator
+test.org.koreait.models.board.infoService
+test.org.koreait.models.board.BoardData // BoardDataDao
+
+test통과 되면 BoardSaveServiceTest 제외하고 main 으로 전부 옮기기
+옮긴 후 src.main.org.koreait.controller.board.BoardController 에서 html과 연결해주는
+로직 작성 작성중 infoservice 로직 작성 하다가 BoardDataNotFoundException 생성
+main.org.koreait.models.board.BoardDataNotFoundException 작성후
+
+BoardController 에서 exceptionhandler작성
+
+resources.templates.commons.execute_script.html
+resources.templates.layouts.main_html // outlines[footer, header]-main.html
+resources.templates.board.view_html 만들기만
+resources.templates.board.write 다시작성 후 boardcontroller에서 getmapping
+@ModelAttrubute 작성
+
+boarddataform 에서 @NotBlank작성
+
+resources.templates.board.view_html 작성
+
+BoardSaveServiceTest 이동해서 @AutoConfigureMockMvc작성 통합구현테스트로직
+--saveSuccessControllerTest, requiredFieldControllerTest
+테스트 통과되면 완료
+
+
+
