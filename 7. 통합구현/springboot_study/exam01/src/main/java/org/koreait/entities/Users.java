@@ -4,6 +4,9 @@ import jakarta.persistence.*;
 import lombok.*;
 import org.koreait.contants.UserType;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Entity
 @Data
 @Builder
@@ -32,7 +35,11 @@ public class Users extends BaseEntity{
     @Column(length=10,nullable = false)
     private UserType type = UserType.USER;
 
+    @OneToMany(mappedBy = "user")
+    private List<BoardData> boardDatas = new ArrayList<>();
 
-
-
+    @OneToOne
+    @JoinColumn(name="profile_id")
+    @ToString.Exclude
+    private UserProfile profile;
 }
