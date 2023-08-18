@@ -26,12 +26,12 @@ public class BoardData extends BaseEntity{
 
     private long hit;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name="user_no")
     @ToString.Exclude
     private Users user;
 
-    @ManyToMany
+    @ManyToMany(fetch = FetchType.LAZY)
     @ToString.Exclude
     private List<HashTag> tags = new ArrayList<>();
 }

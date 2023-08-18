@@ -38,7 +38,7 @@ public class Users extends BaseEntity{
     @OneToMany(mappedBy = "user")
     private List<BoardData> boardDatas = new ArrayList<>();
 
-    @OneToOne
+    @OneToOne(fetch = FetchType.LAZY)
     @JoinColumn(name="profile_id")
     @ToString.Exclude
     private UserProfile profile;
