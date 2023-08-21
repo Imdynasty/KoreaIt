@@ -35,7 +35,7 @@ public class Users extends BaseEntity{
     @Column(length=10,nullable = false)
     private UserType type = UserType.USER;
 
-    @OneToMany(mappedBy = "user")
+    @OneToMany(mappedBy = "user", cascade = CascadeType.REMOVE)
     private List<BoardData> boardDatas = new ArrayList<>();
 
     @OneToOne(fetch = FetchType.LAZY)

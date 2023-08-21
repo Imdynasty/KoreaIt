@@ -1,11 +1,13 @@
 package org.koreait.jpaex;
 
 import jakarta.persistence.EntityManager;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.koreait.contants.UserType;
 import org.koreait.entities.BoardData;
 import org.koreait.entities.Users;
+import org.koreait.models.board.BoardListService;
 import org.koreait.repositories.BoardDataRepository;
 import org.koreait.repositories.UsersRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,6 +24,9 @@ import java.util.List;
 public class JPAEx7 {
     @Autowired
     private BoardDataRepository boardDataRepository;
+
+    @Autowired
+    private BoardListService listService;
 
     @Autowired
     private UsersRepository usersRepository;
@@ -60,5 +65,41 @@ public class JPAEx7 {
         Users user = data.getUser();
         String userId = user.getUserId();
         System.out.println("userId :" + userId);
+    }
+    @Test
+    void test2(){
+        List<BoardData> items = boardDataRepository.findAll(); // 1번 쿼리
+        for(BoardData item : items){
+            Users user = item.getUser();
+            String userId = user.getUserId(); // 10번 쿼리
+            System.out.println("userId : " + userId);
+        }
+    }
+
+    @Test
+    void test3(){
+        List<BoardData> items = boardDataRepository.getList();
+        for(BoardData item : items){
+            Users user = item.getUser();
+            String userId = user.getUserId(); // 10번 쿼리
+            System.out.println("userId : " + userId);
+        }
+    }
+
+    @Test
+    void test4(){
+        List<BoardData> items = listService.getList();
+        for(BoardData item : items){
+            Users user = item.getUser();
+            String userId = user.getUserId(); // 10번 쿼리
+            System.out.println("userId : " + userId);
+        }
+    }
+
+    @Test
+    void test5(){
+        Users user = usersRepository.findByUserId("user01");
+        usersRepository.delete(user);
+        usersRepository.flush();
     }
 }
