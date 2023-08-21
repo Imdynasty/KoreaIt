@@ -44,5 +44,7 @@ public class BoardSaveService {
         }
 
         repository.saveAndFlush(boardData);
+        
+        boardForm.setId(boardData.getId());//데이터가 수정되든 추가되든 게시글 번호가 무조건 추가됨
     }
 }
