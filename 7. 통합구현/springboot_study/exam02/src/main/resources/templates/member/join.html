@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<h1>회원가입</h1>
+<form method="POST" th:action="@{/member/join}" th:object="${joinForm}">
+    <dl>
+        <dt>아이디</dt>
+        <dd>
+            <input type="text" name="userId" th:field="*{userId}">
+            <div th:each="err : ${#fields.errors('userId')}" th:text="${err}"></div>
+        </dd>
+    </dl>
+    <dl>
+        <dt>비밀번호</dt>
+        <dd>
+            <input type="password" name="userPw" th:field="*{userPw}">
+            <div th:each="err : ${#fields.errors('userPw')}" th:text="${err}"></div>
+        </dd>
+    </dl>
+    <dl>
+        <dt>비밀번호 확인</dt>
+        <dd>
+            <input type="password" name="userPwRe" th:field="*{userPwRe}">
+            <div th:each="err : ${#fields.errors('userPwRe')}" th:text="${err}"></div>
+        </dd>
+    </dl>
+    <dl>
+        <dt>회원명</dt>
+        <dd>
+            <input type="text" name="userNm" th:field="*{userNm}">
+            <div th:each="err : ${#fields.errors('userNm')}" th:text="${err}"></div>
+        </dd>
+    </dl>
+    <button type="submit">가입하기</button>
+</form>
+</body>
+</html>

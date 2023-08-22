@@ -1,0 +1,6 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<h1>마이페이지!</h1>
+<h1 sec:authorize="isAuthenticated()">로그인 상태...</h1>
+</html>
